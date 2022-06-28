@@ -1,0 +1,225 @@
+html body{
+    margin: 0%;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar{
+    height: 50px;
+    background-color: skyblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.listItem{
+    margin-right: 35px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.avatar{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.home{
+    display: flex;
+    padding: 50px 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 0px;
+}
+.desc{
+    color: black;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.cardButton{
+    border: none;
+    border-radius: 10px;
+    background-color: skyblue;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.postImg{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+.postTitle{
+    text-align: center;
+}
+.postDesc{
+    padding: 0 100px;
+    font-size: 24px;
+    font-weight: 300;
+    color: grey;
+    margin-top: 50px;
+}
+.postLongDesc{
+    padding: 100px;
+    padding-top: 50px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.login{
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    width: 80%;
+    height: 75%;
+    box-shadow: 8px 7px 15px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 8px 7px 15px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 7px 15px -5px rgba(0,0,0,0.75);
+align-items: center;
+border-radius: 20px;
+display: flex;
+}
+.left, .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.or{
+    border: 2px solid rgb(128, 128, 128);
+    border-radius: 50%;
+    padding: 10px;
+    color: grey;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.line{
+    width: 0.8px;
+    height: 75%;
+    background-color:grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+.loginButton{
+    width: 200px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.google{
+    background-color: rgb(236, 72, 6);
+}
+.facebook{
+    background-color: rgb(37, 184, 241);
+}
+.github{
+    background-color: black;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+input{
+    width: 200px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+.submit{
+    width: 200px;
+    background-color: rgb(60, 171, 214);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.loginTitle{
+    position: absolute;
+    top: 17%;
+    color: rgb(158, 158, 158);
+}
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+@media screen and (max-width: 992px) {
+    .card {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  
+    .wrapper {
+      width: 65%;
+      height: 90%;
+      flex-direction: column;
+    }
+  
+    .loginTitle {
+      display: none;
+    }
+  
+    .center {
+      width: 100%;
+      position: relative;
+    }
+  
+    .left {
+      padding: 20px;
+    }
+  
+    .right {
+      padding: 20px;
+    }
+  
+    .line {
+      height: 0.5px;
+      width: 300px;
+    }
+  }
